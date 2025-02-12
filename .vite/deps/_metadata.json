@@ -1,0 +1,68 @@
+{
+  "hash": "bf985a0b",
+  "browserHash": "5d96adb9",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "7e385b94",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "46019df1",
+      "needsInterop": true
+    },
+    "web-vitals": {
+      "src": "../../node_modules/web-vitals/dist/web-vitals.js",
+      "file": "web-vitals.js",
+      "fileHash": "7e5fab7c",
+      "needsInterop": false
+    },
+    "typewriter-effect": {
+      "src": "../../node_modules/typewriter-effect/dist/react.js",
+      "file": "typewriter-effect.js",
+      "fileHash": "5f332a6a",
+      "needsInterop": true
+    },
+    "react-icons/fa": {
+      "src": "../../node_modules/react-icons/fa/index.mjs",
+      "file": "react-icons_fa.js",
+      "fileHash": "f02eb860",
+      "needsInterop": false
+    },
+    "react-icons/hi": {
+      "src": "../../node_modules/react-icons/hi/index.mjs",
+      "file": "react-icons_hi.js",
+      "fileHash": "3b8ab1ee",
+      "needsInterop": false
+    },
+    "react-icons/bs": {
+      "src": "../../node_modules/react-icons/bs/index.mjs",
+      "file": "react-icons_bs.js",
+      "fileHash": "eebc0177",
+      "needsInterop": false
+    },
+    "react-scroll": {
+      "src": "../../node_modules/react-scroll/modules/index.js",
+      "file": "react-scroll.js",
+      "fileHash": "81be018c",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-OLIHNLUI": {
+      "file": "chunk-OLIHNLUI.js"
+    },
+    "chunk-443KLO5K": {
+      "file": "chunk-443KLO5K.js"
+    },
+    "chunk-L2H5Y3CP": {
+      "file": "chunk-L2H5Y3CP.js"
+    },
+    "chunk-UXIASGQL": {
+      "file": "chunk-UXIASGQL.js"
+    }
+  }
+}
