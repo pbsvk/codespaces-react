@@ -81,6 +81,3 @@ MIT License - feel free to use this project for your own portfolio!
 
 ---
 Built with 💜 by [Bhaskara Padala]
-
----
-Answer from Perplexity: pplx.ai/share
