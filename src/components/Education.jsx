@@ -8,72 +8,68 @@ const Skills = () => {
       dateText: "Sept 2023 – Dec 2024",
       title: "Stevens Institute of technology",
       subtitle: "M.S., Computer Science",
-      description: `
-        <strong>Course Work:</strong> <br />
-        CS 590 : Algorithms <br />
-        CS 600 : Advanced Algorithm Design and Implementation <br />
-        CS 556 : Mathematical Foundations for Machine Learning <br />
-        CS 561 : DBMS <br />
-        CS 550 : Computer Organization and Programming <br />
-        CS 513 : Knowledge Discovery and Data Mining <br />
-        CS 524 : Introduction to Cloud Computing <br />
-        MIS 637 : Data Analytics and Machine Learning <br />
-        CS 573 : Fundamentals of Cybersecurity <br />
-        AA 551 : Engineering Python
-      `,
+      courses: [
+        "CS 590: Algorithms",
+        "CS 600: Advanced Algorithm Design and Implementation",
+        "CS 556: Mathematical Foundations for Machine Learning",
+        "CS 561: DBMS",
+        "CS 550: Computer Organization and Programming",
+        "CS 513: Knowledge Discovery and Data Mining",
+        "CS 524: Introduction to Cloud Computing",
+        "MIS 637: Data Analytics and Machine Learning",
+        "CS 573: Fundamentals of Cybersecurity",
+        "AA 551: Engineering Python"
+      ]
     },
     {
       key: "002",
       dateText: "Aug 2019 – May 2023",
       title: "MVGR College of Engineering",
       subtitle: "B.Tech, Electronics and Communication Engineering",
-      description: `
-        <strong>Skills:</strong> <br />
-        MATLAB <br />
-        C (Programming Language) <br />
-        Programming <br />
-        Algorithms <br />
-        JavaScript <br />
-        Discrete Mathematics <br />
-        Python (Programming Language) <br />
-        Code Review <br />
-        Mathematics <br />
-        Data Structures <br />
-        Problem Solving <br />
-        SQL <br />
-        Computer Engineering
-      `,
-    },
+      skills: [
+        "MATLAB", "C", "Programming", "Algorithms", "JavaScript",
+        "Discrete Mathematics", "Python", "Code Review",
+        "Mathematics", "Data Structures", "Problem Solving",
+        "SQL", "Computer Engineering"
+      ]
+    }
   ];
 
   return (
-    <div name="education" className="w-full min-h-screen flex">
-      <div className="max-w-screen-lg p-14">
-        <div>
-          <h1 className="text-6xl font-bold">
-            <span id="Vamsi">Education</span>
-          </h1>
-          <div className="flex justify-center items-center">
-            <div className="timeline">
-              {educationTimelineData.map((item) => (
-                <div key={item.key} className="timeline-item">
-                  <div className="timeline-item-date">
-                    {item.dateText}
+    <section className="education-section">
+      <div className="education-container">
+        <h1 className="education-title">Education</h1>
+        <div className="timeline">
+          {educationTimelineData.map((item) => (
+            <div key={item.key} className="timeline-item">
+              <div className="timeline-date">{item.dateText}</div>
+              <div className="timeline-content">
+                <h3 className="institution-name">{item.title}</h3>
+                <h4 className="degree-name">{item.subtitle}</h4>
+                {item.courses && (
+                  <div className="course-list">
+                    <h5>Course Work</h5>
+                    {item.courses.map((course, index) => (
+                      <div key={index} className="course-item">{course}</div>
+                    ))}
                   </div>
-                  <div className="timeline-item-content" >
-                    <h3 className="text-purple1">{item.title}</h3>
-                    <h4 className="text-purple2">{item.subtitle}</h4>
-                    <p
-                      dangerouslySetInnerHTML={{ __html: item.description }}
-                    />
+                )}
+                {item.skills && (
+                  <div className="skills-list">
+                    <h5>Skills</h5>
+                    <div className="skills-grid">
+                      {item.skills.map((skill, index) => (
+                        <span key={index} className="skill-tag">{skill}</span>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                )}
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
