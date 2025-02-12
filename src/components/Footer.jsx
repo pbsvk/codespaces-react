@@ -7,7 +7,7 @@ const Footer = () => {
     <div>
         {lineBreaks}
         <div class="text-center hover:text-black duration-500">
-            <a id="mbournwebsite" href="https://github.com/pbsvk/portfolio">
+            <a id="pbsvkwebsite" href="https://github.com/pbsvk/codespaces-react">
                 2025 pbsvk ©
                 </a>
         </div>

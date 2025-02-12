@@ -1,201 +1,234 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-/* Ensure Tailwind CSS is installed and configured correctly */
+/* Tailwind Imports */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@layer base{
+@layer base {
   html {
     font-family: 'Poppins';
   }
+  
   body {
-    /* background-image: url('/src/assets/grid.png'); */
-    color:#4a4746;
+    color: #4a4746;
   }
+  
   #Vamsi {
-    background: linear-gradient(to bottom, transparent 50%,
-    #d10808d5 50%);
+    background: linear-gradient(to bottom, transparent 50%, #d10808d5 50%);
   }
-  .mySwiper .swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .mySwiper .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #0d0101;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .mySwiper .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  /* In your App.css or a separate CSS file */
-  .timeline-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .timeline-header {
-    text-align: center;
-    color: #333;
-    margin-bottom: 40px;
-  }
-  
-  .timeline {
-    position: relative;
-  }
-  
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 50px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: #e0e0e0;
-  }
-  
-  .timeline-item {
-    display: flex;
-    margin-bottom: 40px;
-    position: relative;
-  }
-  
+}
+
+/* Swiper Styles */
+.mySwiper .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #0d0101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Timeline and Education Styles */
+.timeline-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.timeline-header {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+  width: 100%;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #9f37db, #6b46c1);
+  border-radius: 3px;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -44px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #9f37db;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(159, 55, 219, 0.5);
+}
+
+.timeline-date {
+  min-width: 140px;
+  padding-right: 30px;
+  text-align: right;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.timeline-content {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Education Section */
+.education-section {
+  min-height: 100vh;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-container {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.education-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.institution-name {
+  font-size: 1.6rem;
+  color: #9f37db;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.degree-name {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+/* Course and Skills Styles */
+.course-list, .skills-list {
+  margin-top: 1.5rem;
+}
+
+.course-list h5, .skills-list h5 {
+  font-weight: 600;
+  color: #9f37db;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.course-item {
+  padding: 0.75rem 0;
+  color: #4a5568;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.course-item:last-child {
+  border-bottom: none;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  background: linear-gradient(135deg, #9f37db20, #6b46c120);
+  color: #9f37db;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid #9f37db40;
+}
+
+.skill-tag:hover {
+  background: linear-gradient(135deg, #9f37db40, #6b46c140);
+  transform: translateY(-2px);
+}
+
+/* Utility Classes */
+.w-full { width: 100%; }
+.min-h-screen { min-height: 100vh; }
+.p-14 { padding: 3.5rem; }
+.max-w-screen-lg { max-width: 1024px; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .timeline-date {
-    min-width: 120px;
-    padding-right: 30px;
-    text-align: right;
-    font-weight: 600;
-    color: #666;
-  }
-  
-  .timeline-content {
-    flex: 1;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-left: 20px;
-  }
-  
-  .timeline-title {
-    margin: 0 0 10px;
-    color: #333;
-  }
-  
-  .timeline-subtitle {
-    margin: 0 0 15px;
-    color: #666;
-    font-weight: 500;
-  }
-  
-  .timeline-description {
-    color: #555;
-    line-height: 1.6;
-    white-space: pre-line;
-  }  
-  .education-section {
-    min-height: 100vh;
-    padding: 2rem;
-    background-color: #f8f9fa;
-  }
-  
-  .education-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    min-width: 100px;
+    font-size: 0.9rem;
   }
   
   .education-title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 3rem;
-    color: #2d3748;
-  }
-  
-  .timeline {
-    position: relative;
-    padding-left: 2rem;
-  }
-  
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background: #6b46c1;
-  }
-  
-  .timeline-item {
-    margin-bottom: 3rem;
-    position: relative;
-  }
-  
-  .timeline-date {
-    font-weight: 600;
-    color: #6b46c1;
-    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
   }
   
   .timeline-content {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
   }
   
   .institution-name {
-    font-size: 1.5rem;
-    color: #2d3748;
-    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
   }
   
-  .degree-name {
-    font-size: 1.1rem;
-    color: #4a5568;
-    margin-bottom: 1rem;
+  .education-container,
+  .p-14 {
+    padding: 2rem;
   }
-  
-  .course-list, .skills-list {
-    margin-top: 1rem;
-  }
-  
-  .course-list h5, .skills-list h5 {
-    font-weight: 600;
-    color: #4a5568;
-    margin-bottom: 0.75rem;
-  }
-  
-  .course-item {
-    padding: 0.5rem 0;
-    color: #4a5568;
-  }
-  
-  .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  
-  .skill-tag {
-    background: #e9d8fd;
-    color: #553c9a;
-    padding: 0.25rem 0.75rem;
-    border-radius: 9999px;
-    font-size: 0.875rem;
-  }
-  
 }
