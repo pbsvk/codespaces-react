@@ -80,7 +80,7 @@ const Home = () => {
               <HiOutlineMail size={30} className="hover:text-purple1" />
             </a>
             <a
-              href="https://www.dropbox.com/scl/fi/3uilxhxs9mi7wc2wev391/Vamsi_Resume.pdf?rlkey=hphw3fkesxd0nf65mpby240s9&st=91vznwm5&dl=0"
+              href="https://www.dropbox.com/scl/fi/aq59brfxl14sc7lsq0vww/Vamsi_Resume.pdf?rlkey=6ddjujuv8skda1dw17k9lwtv6&st=e0a5rawy&dl=0"
               target="_blank"
               rel="noopener noreferrer"
             >
