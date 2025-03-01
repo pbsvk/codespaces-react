@@ -43,7 +43,7 @@ const NavBar = () => {
         {links.map(({ id, link, offset }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-black relative after:bg-purple1 after:absolute after:h-1 after:w-0 after:bottom-0 after:left-4 hover:after:w-3/4 after:transition-all after:duration-700"
+            className="px-4 cursor-pointer capitalize font-medium text-white relative after:bg-purple1 after:absolute after:h-1 after:w-0 after:bottom-0 after:left-4 hover:after:w-3/4 after:transition-all after:duration-700"
           >
             <Link
               to={link}
@@ -60,7 +60,7 @@ const NavBar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-50 text-black md:hidden"
+        className="cursor-pointer pr-4 z-50 text-white md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>

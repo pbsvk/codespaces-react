@@ -42,7 +42,7 @@ const Contact = () => {
                 required
               ></textarea>
   
-  <button className="text-white bg-purple-500 px-6 py-3 my-8 mx-auto flex items-center rounded-full hover:scale-105 duration-300 focus:outline-none focus:ring-2 focus:ring-purple-300">
+  <button className="text-white bg-red-500 px-6 py-3 my-8 mx-auto flex items-center rounded-full hover:scale-105 duration-300 focus:outline-none focus:ring-2 focus:ring-purple-300">
   SUBMIT
 </button>
             </form>

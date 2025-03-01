@@ -11,7 +11,7 @@
   }
   
   body {
-    color: #4a4746;
+    color: #ffffff;
   }
   
   #Vamsi {
@@ -31,7 +31,7 @@
 .mySwiper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #0d0101;
+  background: #f1f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, #9f37db, #6b46c1);
+  background: linear-gradient(to bottom, #d11818, #f06d02);
   border-radius: 3px;
 }
 
@@ -92,7 +92,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #9f37db;
+  background: #d11818;
   border: 3px solid #fff;
   box-shadow: 0 0 10px rgba(159, 55, 219, 0.5);
 }
@@ -111,13 +111,13 @@
   background: rgba(255, 255, 255, 0.95);
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px #f1f0f0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .timeline-content:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 20px #f1f0f0;
 }
 
 /* Education Section */
@@ -140,14 +140,14 @@
   font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 3rem;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .institution-name {
   font-size: 1.6rem;
-  color: #9f37db;
+  color: #d11818;
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
@@ -166,7 +166,7 @@
 
 .course-list h5, .skills-list h5 {
   font-weight: 600;
-  color: #9f37db;
+  color: #d11818;
   margin-bottom: 1rem;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -176,7 +176,7 @@
 .course-item {
   padding: 0.75rem 0;
   color: #4a5568;
-  border-bottom: 1px solid #edf2f7;
+  border-bottom: 1px solid #000000;
 }
 
 .course-item:last-child {
@@ -191,13 +191,13 @@
 
 .skill-tag {
   background: linear-gradient(135deg, #9f37db20, #6b46c120);
-  color: #9f37db;
+  color: #d11818;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  border: 1px solid #9f37db40;
+  border: 1px solid #d11818;
 }
 
 .skill-tag:hover {

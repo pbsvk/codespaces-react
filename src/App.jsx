@@ -20,7 +20,8 @@ function App() {
         muted
         loop
         playsInline
-        className="fixed top-0 left-0 min-w-full min-h-full object-cover z-[-1]"
+        className="fixed top-0 left-0 min-w-full min-h-full object-cover z-[-1] invert"
+        
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>

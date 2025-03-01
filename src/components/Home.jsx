@@ -4,7 +4,6 @@ import image1 from "../assets/image1.png";
 import image2 from "../assets/image2.png";
 import image3 from "../assets/image3.png";
 import image4 from "../assets/image4.png";
-import image5 from "../assets/image5.png";
 import image6 from "../assets/image6.png";
 import Typewriter from "typewriter-effect";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -13,7 +12,7 @@ import { BsPaperclip } from "react-icons/bs";
 
 const Home = () => {
   // Array of image sources for cycling
-  const images = [image1, image2, image3, image4, image5, image6];
+  const images = [image1, image2, image3, image4, image6];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Update the image index every 3 seconds
@@ -36,13 +35,13 @@ const Home = () => {
                 key={index}
                 src={img}
                 alt="Profile"
-                className={`absolute inset-0 border-4 border-purple1 rounded-full object-contain w-full h-full transition-opacity duration-500 ${
+                className={`absolute inset-0 border-4 border-red rounded-full object-contain w-full h-full transition-opacity duration-500 ${
                   index === currentImageIndex ? "opacity-100" : "opacity-0"
                 }`}
               />
             ))}
           </div>
-          <h1 className="pt-2 pb-8 text-6xl sm:text-7xl font-bold text-black">
+          <h1 className="pt-2 pb-8 text-6xl sm:text-7xl font-bold text-white">
             Hi, I'm{" "}
             <span
               id="Vamsi"
