@@ -4,6 +4,7 @@ import dreamai from "../assets/portfolio/dreamai.png";
 import weatherbunny from "../assets/weatherbunny.png";
 import messengerapp from "../assets/portfolio/Screenshot 2025-02-11 at 8.53.31 PM.png";
 import AWS from "../assets/Screenshot 2025-02-11 at 8.59.47 PM.png";
+import SnapX from "../assets/portfolio/SnapX-home.png"
 // import mancala from '../assets/portfolio/mancala.png';
 // import valet from '../assets/portfolio/valet.png';
 // import exercisetrack from '../assets/portfolio/exercisetrack.png';
@@ -15,29 +16,35 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      src: SnapX,
+      href: "https://github.com/pbsvk/SnapX",
+    },
+    {
+      id: 2,
       src: hcr,
       href: "https://www.dropbox.com/scl/fi/ale93i95hsqetqido60rt/d969f207-c9f0-434e-96a0-4919cfec70c6-EDIT-copy.jpg?rlkey=2qm4agonj810iogs39p8zsii4&st=up7gfl0y&dl=0",
     },
     {
-      id: 2,
+      id: 3,
       src: dreamai,
       href: "https://github.com/pbsvk/dreamAi-Text-to-Image-Generator",
     },
     {
-      id: 3,
+      id: 4,
       src: weatherbunny,
       href: "https://github.com/pbsvk/Weather-Bunny",
     },
     {
-      id: 4,
+      id: 5,
       src: messengerapp,
       href: "https://github.com/pbsvk/MessengerApp",
     },
     {
-      id: 5,
+      id: 6,
       src: AWS,
       href: "https://github.com/pbsvk/AWS-Microservices-Migration-and-CI-CD-Pipeline-Implementation-for-Monolithic-Application",
     },
+    
   ];
 
   return (
@@ -65,6 +72,16 @@ const Portfolio = () => {
               {id === 1 && (
                 <div className="text-center mt-2">
                   <p className="text-black font-bold">
+                    SnapX - Connect with Snaps
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    #TypeScript #Appwrite #React.js #Tailwind CSS #ShadCN #React Query #React Hook Form
+                  </p>
+                </div>
+              )}
+              {id === 2 && (
+                <div className="text-center mt-2">
+                  <p className="text-black font-bold">
                     Mythra: Home Companion Robot
                   </p>
                   <p className="text-sm text-gray-500">
@@ -72,7 +89,7 @@ const Portfolio = () => {
                   </p>
                 </div>
               )}
-              {id === 2 && (
+              {id === 3 && (
                 <div className="text-center mt-2">
                   <p className="text-black font-bold">Dream AI</p>
                   <p className="text-sm text-gray-500">
@@ -80,7 +97,7 @@ const Portfolio = () => {
                   </p>
                 </div>
               )}
-              {id === 3 && (
+              {id === 4 && (
                 <div className="text-center mt-2">
                   <p className="text-black font-bold">Weather Bunny</p>
                   <p className="text-sm text-gray-500">
@@ -88,7 +105,7 @@ const Portfolio = () => {
                   </p>
                 </div>
               )}
-              {id === 4 && (
+              {id === 5 && (
                 <div className="text-center mt-2">
                   <p className="text-black font-bold">Messenger App</p>
                   <p className="text-sm text-gray-500">
@@ -96,7 +113,7 @@ const Portfolio = () => {
                   </p>
                 </div>
               )}
-              {id === 5 && (
+              {id === 6 && (
                 <div className="text-center mt-2">
                   <p className="text-black font-bold">
                     AWS Microservices Migration and CI/CD Pipeline
@@ -106,7 +123,7 @@ const Portfolio = () => {
                     #AWS #Docker #Jenkins #Kubernetes #EC2
                   </p>
                 </div>
-              )}
+              )}  
             </div>
           ))}
         </div>
